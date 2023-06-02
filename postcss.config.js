@@ -11,6 +11,9 @@ module.exports = {
 		}),
 		require("postcss-apply"),
 		// require("precss"),
+		require("cssnano")({
+			preset: "default",
+		}),
 		require("postcss-simple-vars")({
 			variables: {
 				colorPrimary: "#6c63ff",

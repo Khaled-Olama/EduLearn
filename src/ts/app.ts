@@ -3,7 +3,7 @@ window.addEventListener("scroll", () => {
 	const nav: HTMLElement | null = document.querySelector("nav");
 	if (nav) {
 		const scrollPosition: number = window.scrollY || window.pageYOffset;
-		if (scrollPosition > 0) {
+		if (scrollPosition > 10) {
 			nav.classList.add("window-scroll");
 		} else {
 			nav.classList.remove("window-scroll");
